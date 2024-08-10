@@ -1,0 +1,206 @@
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132vh;
+    background-image: url(/intento3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.registro-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.826);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.registro-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    text-shadow: 
+    2px 2px 2px white,  /* Sombras negras */
+    -2px 2px 2px white,
+    2px -2px 2px white,
+    -2px -2px 2px white,
+    1px 0px 0px white,
+    -1px 0px 0px white,
+    0px 1px 0px white,
+    0px -1px 0px white;
+}
+
+.registro-box form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.registro-box form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.registro-box form button[type="submit"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 0px solid #000;
+    border-radius: 40px;
+    font-weight: bold;
+    margin-top: 5%;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.registro-box form button[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar2 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.86);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 8%);
+    top: 20px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.logo-image {
+    width: 35px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.navbar-logo span {
+    color: black;
+    font-size: 120%;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.navbar-links3 {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar-links3 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-links3 a:hover {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+@media (max-width: 1150px) {
+    .navbar2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+
+    .navbar-logo {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links3 {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: #d8d1cb;
+        position: center;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links3.open {
+        display: flex;
+    }
+
+    .registro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 138vh;
+        background-image: url(/star.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .registro-box {
+        width: 90%;
+        margin-top: 25%;
+    }
+
+    .registro-container {
+        padding: 20px;
+    }
+}

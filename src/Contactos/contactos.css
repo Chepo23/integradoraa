@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contactos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132vh;
+    background-image: url(/intento3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navbar6 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d8d1cbeb;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 8%);
+    top: 20px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.logo-image {
+    width: 35px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.navbar-logo span {
+    color: black;
+}
+
+.navbar-links6 {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar-links6 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color: #d8d1cb;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+    text-align: left;
+}
+
+.cuadro-texto {
+    width: 50%;
+}
+
+.cuadro-texto h2 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.text1 {
+    font-size: 17px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.cuadro-formulario {
+    width: 45%;
+}
+
+.cuadro-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    color: black;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: gray;
+}
+
+.msj {
+    height: 150px;
+}
+
+button[type="submit"] {
+    align-self: flex-end;
+    padding: 8px 30px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.p-email {
+    margin-top: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+@media (max-width: 1150px) {
+    .navbar6 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+
+    .navbar-logo {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links6 {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: #d8d1cb;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links6.open {
+        display: flex;
+    }
+
+    .navbar6::after {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contactos-container {
+        padding: 20px;
+    }
+
+    .cuadro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        align-self: center;
+        padding: 8px 30px;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+}

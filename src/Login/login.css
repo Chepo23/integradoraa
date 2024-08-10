@@ -1,0 +1,205 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132vh;
+    background-image: url(/intento3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 90%;
+    margin-bottom: 10%;
+    max-width: 350px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.826);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 8%;
+    text-shadow: 
+    2px 2px 2px white,
+    -2px 2px 2px white,
+    2px -2px 2px white,
+    -2px -2px 2px white,
+    1px 0px 0px white,
+    -1px 0px 0px white,
+    0px 1px 0px white,
+    0px -1px 0px white;
+}
+
+.login-box form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+}
+
+.login-box form input[type="email"],
+.login-box form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+}
+
+.login-box form button[type="submit"] {
+    width: calc(100% - 90px);
+    padding: 3px;
+    border: 0px solid #000;
+    border-radius: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 15%;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.login-box form button[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar1 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d8d1cb;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.826);
+    width: calc(100% - 8%);
+    top: 20px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.logo-image {
+    width: 35px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.navbar-logo span {
+    color: black;
+}
+
+.navbar-links2 {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar-links2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-links2 a:hover {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+@media (max-width: 1150px) {
+    .navbar1 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+
+    .navbar-logo {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links2 {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: #d8d1cb;
+        position: center;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links2.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .login-box {
+        width: 95%;
+        margin-top: 20%;
+    }
+
+    .navbar1 {
+        padding: 10px;
+        width: calc(100% - 20px);
+        left: 10px;
+        top: 10px;
+    }
+
+    .navbar-logo {
+        margin-left: 10px;
+    }
+
+    .navbar-links2 {
+        padding: 5px 0;
+    }
+}
+
