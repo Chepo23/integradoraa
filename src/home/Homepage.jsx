@@ -54,18 +54,21 @@ export const Homepage = () => {
       </nav>
       <div className="carousel-container">
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-        
           <div className="carousel-inner">
             {images.map((image, index) => (
               <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                <img src={image} className={`d-block w-100 ${index === 1 ? 'segunda-cama' : ''} ${index === 2 ? 'tercera-cama' : ''}`} alt={`Slide ${index}`} />
+                <img src={image} className="d-block w-100" alt={`Slide ${index}`} />
+                <div className="carousel-caption">
+                  <h3>Descansa mejor, vive mejor</h3>
+                  <p>Tu sueño, nuestra misión.</p>
+                  <button type="button" className="login-button1" onClick={handleLoginClick}>Iniciar Sesion</button>
+                </div>
               </div>
             ))}
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
-            <button type="button" className="login-button1" onClick={handleLoginClick}>Iniciar Sesion</button>
           </button>
           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -74,19 +77,15 @@ export const Homepage = () => {
         </div>
       </div>
       <div className="container">
-        <div className="content">
-          <p>Bienvenidos</p>
-          
-          <h5>Sleep Track es un producto que busca ayudar a conciliar el sueño a personas con insomnio, llevando un registro de sus patrones de sueño y dandole recomendaciones de como mejorar su calidad de sueño</h5>
-        </div>
         <div className="cel-imagen">
-          <img src="cel.jpg" alt="cel1" className='celu1' />
-          <img src="cel2.jpg" alt="cel2" className='celu2' />
-          <img src="cel3.jpg" alt="cel3" className='celu3' />
+          <img src="/cel.jpg" alt="Celular 1" className="celu1" />
+          <img src="/cel2.jpg" alt="Celular 2" className="celu2" />
+          <img src="/cel3.jpg" alt="Celular 3" className="celu3" />
+          <img src="/cel6.jpg" alt="Celular 3" className="celu4" />
+          <img src="/cel5.jpg" alt="Celular 3" className="celu5" />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Homepage;

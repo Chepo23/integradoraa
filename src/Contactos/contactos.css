@@ -7,14 +7,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 132vh;
-    background-image: url(/intento3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
+    min-height: 100vh; 
+    background-color: #D8D1CB; 
     padding: 20px;
     box-sizing: border-box;
+    flex-direction: column; 
 }
 
 .navbar6 {
@@ -23,7 +20,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #d8d1cbeb;
+    background-color: white;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: calc(100% - 8%);
@@ -33,7 +30,7 @@ html, body {
 }
 
 .navbar-logo {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-right: 20px;
     margin-left: 40px;
@@ -63,93 +60,8 @@ html, body {
     font-weight: bold;
 }
 
-.cuadro {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10%;
-    padding: 20px;
-    background-color: #d8d1cb;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
-    width: 80%;
-    max-width: 1000px;
-    height: 100%;
-    text-align: left;
-}
-
-.cuadro-texto {
-    width: 50%;
-}
-
-.cuadro-texto h2 {
-    margin-top: 10px;
-    font-size: 35px;
-}
-
-.text1 {
-    font-size: 17px;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-.cuadro-formulario {
-    width: 45%;
-}
-
-.cuadro-formulario form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-top: 20px;
-}
-
-.form-group label {
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    color: black;
-    margin-top: 5px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: gray;
-}
-
-.msj {
-    height: 150px;
-}
-
-button[type="submit"] {
-    align-self: flex-end;
-    padding: 8px 30px;
-    background-color: white;
-    color: black;
-    margin-top: 10px;
-    border-radius: 15px;
-    border: 2px solid black;
-    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: rgb(202, 202, 202);
-}
-
-.p-email {
-    margin-top: 20px;
+.navbar-links6 a:hover {
+    color: #555;
 }
 
 .hamburger {
@@ -162,6 +74,109 @@ button[type="submit"]:hover {
     position: absolute;
     right: 3%;
     top: 20%;
+}
+
+.cuadro {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1000px; 
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: white;
+    background-image: url('/estar3.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 100px; 
+}
+
+.cuadro-texto, .cuadro-formulario {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.cuadro-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro-texto {
+    margin-bottom: 20px;
+}
+
+.cuadro-texto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cuadro-texto p {
+    font-size: 16px;
+    color: white;
+}
+
+.cuadro-formulario {
+    width: 100%;
+}
+
+.cuadro-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: gray;
+}
+
+.msj {
+    height: 150px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #D8D1CB;
 }
 
 @media (max-width: 1150px) {
@@ -183,7 +198,7 @@ button[type="submit"]:hover {
         flex-direction: column;
         gap: 20px;
         width: 100%;
-        background-color: #d8d1cb;
+        background-color: #D8D1CB;
         position: absolute;
         top: 60px;
         left: 0;
@@ -193,10 +208,6 @@ button[type="submit"]:hover {
 
     .navbar-links6.open {
         display: flex;
-    }
-
-    .navbar6::after {
-        background-color: rgba(0, 0, 0, 0);
     }
 
     .hamburger {
