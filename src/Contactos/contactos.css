@@ -7,7 +7,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 135vh; 
     background-color: #D8D1CB; 
     padding: 20px;
     box-sizing: border-box;
@@ -92,7 +92,7 @@ html, body {
     background-repeat: no-repeat;
     color: black;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin-top: 100px; 
+    margin-bottom: 2%;
 }
 
 .cuadro-texto, .cuadro-formulario {
@@ -131,18 +131,18 @@ html, body {
     flex-direction: column;
 }
 
-.form-group {
+.form-group2 {
     margin-top: 20px;
 }
 
-.form-group label {
+.form-group2 label {
     font-size: 16px;
     margin-bottom: 10px;
     color: white;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group2 input,
+.form-group2 textarea {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -153,8 +153,8 @@ html, body {
     color: black;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.form-group2 input::placeholder,
+.form-group2 textarea::placeholder {
     color: gray;
 }
 
@@ -208,6 +208,25 @@ button[type="submit"]:hover {
 
     .navbar-links6.open {
         display: flex;
+        background-color: white;
+    }
+
+    .form-group2 input,
+    .form-group2 textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #000;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-left: 2%;
+        color: black;
+    }
+
+    .form-group2 label {
+        font-size: 16px;
+        margin-left: 2%;
+        color: white;
     }
 
     .hamburger {
@@ -221,16 +240,17 @@ button[type="submit"]:hover {
     .cuadro {
         flex-direction: column;
         align-items: center;
-        margin-top: 20%;
+        margin-top: 15%;
         padding: 10px;
     }
 
     button[type="submit"] {
         align-self: center;
         padding: 8px 30px;
-        background-color: white;
-        color: black;
-        margin-top: 10px;
+        background-color: #333;
+        color: white;
+        margin-left: 2%;
+        width: 40%;
         border-radius: 15px;
         border: 2px solid black;
         box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);

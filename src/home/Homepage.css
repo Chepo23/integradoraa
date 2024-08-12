@@ -127,6 +127,7 @@ body, html, #root, .home {
   bottom: 200px;
   left: 50%;
   transform: translateX(-50%);
+  border: 2px solid black;
   z-index: 2;
 }
 

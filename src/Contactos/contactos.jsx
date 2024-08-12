@@ -50,7 +50,7 @@ export const Contactos = () => {
         </div>
         <div className="cuadro-formulario">
           <form>
-            <div className="form-group">
+            <div className="form-group2">
               <label htmlFor="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" placeholder='Nombre'/>
               <label htmlFor="email">E-Mail</label>
