@@ -104,7 +104,7 @@ export const Login = () => {
         <div className="row full-height justify-content-center">
           <div className="col-12 text-center align-self-center py-5">
             <div className="section pb-5 pt-5 pt-sm-2 text-center">
-              <h6 className="mb-0"><span><b>Log In</b></span><span><b>Sign Up</b></span></h6>
+              <h6 className="mb-0"><span><b>Iniciar Sesion</b></span><span><b>Registrarse</b></span></h6>
               <input className="checkbox" type="checkbox" id="reg-log" name="reg-log" />
               <label htmlFor="reg-log"></label>
               <div className="card-3d-wrap mx-auto">
@@ -112,31 +112,31 @@ export const Login = () => {
                   <div className="card-front">
                     <div className="center-wrap">
                       <div className="section text-center">
-                        <h4 className="mb-4 pb-3">Log In</h4>
+                        <h4 className="mb-4 pb-3">Iniciar Sesion</h4>
                         <form onSubmit={handleLogin}>
-                          <div className="form-group">
+                          <div className="form-group3">
                             <input
                               type="email"
                               className="form-style2"
-                              placeholder="Email"
+                              placeholder="Correo Electronico"
                               value={email}
                               onChange={(e) => setEmail(e.target.value)}
                               required
                             />
                             <i className="input-icon uil uil-at"></i>
                           </div>
-                          <div className="form-group mt-2">
+                          <div className="form-group3 mt-2">
                             <input
                               type="password"
                               className="form-style2"
-                              placeholder="Password"
+                              placeholder="Contraseña"
                               value={contrasena}
                               onChange={(e) => setContrasena(e.target.value)}
                               required
                             />
                             <i className="input-icon uil uil-lock-alt"></i>
                           </div>
-                          <button type="submit" className="btn mt-4">Login</button>
+                          <button type="submit" className="btn mt-4">Iniciar Sesion</button>
                           {error && <p className="error-message">{error}</p>}
                         </form>
                       </div>
@@ -145,13 +145,13 @@ export const Login = () => {
                   <div className="card-back">
                     <div className="center-wrap">
                       <div className="section text-center">
-                        <h4 className="mb-3pb-3">Sign Up</h4>
+                        <h4 className="mb-3pb-3">Registrarse</h4>
                         <form onSubmit={handleSubmit}>
                           <div className="form-group">
                             <input
                               type="text"
-                              className="form-style2"
-                              placeholder="Full Name"
+                              className="form-style3"
+                              placeholder="Nombre"
                               name="name"
                               value={formData.name}
                               onChange={handleChange}
@@ -161,8 +161,8 @@ export const Login = () => {
                           <div className="form-group mt-2">
                             <input
                               type="tel"
-                              className="form-style2"
-                              placeholder="Phone Number"
+                              className="form-style3"
+                              placeholder="Numero Telefonico"
                               name="phone"
                               value={formData.phone}
                               onChange={handleChange}
@@ -172,8 +172,8 @@ export const Login = () => {
                           <div className="form-group mt-2">
                             <input
                               type="email"
-                              className="form-style2"
-                              placeholder="Email"
+                              className="form-style3"
+                              placeholder="Correo Electronico"
                               name="email"
                               value={formData.email}
                               onChange={handleChange}
@@ -183,8 +183,8 @@ export const Login = () => {
                           <div className="form-group mt-2">
                             <input
                               type="password"
-                              className="form-style2"
-                              placeholder="Password"
+                              className="form-style3"
+                              placeholder="Contraseña"
                               name="password"
                               value={formData.password}
                               onChange={handleChange}
@@ -194,8 +194,8 @@ export const Login = () => {
                           <div className="form-group mt-2">
                             <input
                               type="password"
-                              className="form-style2"
-                              placeholder="Confirm Password"
+                              className="form-style3"
+                              placeholder="Confirmar Contraseña"
                               name="confirmPassword"
                               value={formData.confirmPassword}
                               onChange={handleChange}
@@ -205,14 +205,14 @@ export const Login = () => {
                           <div className="form-group mt-2">
                             <input
                               type="date"
-                              className="form-style2"
+                              className="form-style3"
                               name="birthDate"
                               value={formData.birthDate}
                               onChange={handleChange}
                             />
                             <i className="input-icon uil uil-calendar-alt"></i>
                           </div>
-                          <button type="submit" className="btn mt-4">Register</button>
+                          <button type="submit" className="btn2 mt-4">Registrarse</button>
                         </form>
                       </div>
                     </div>
